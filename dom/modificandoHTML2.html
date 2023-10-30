@@ -12,7 +12,13 @@
         <p>Texto Inicial</p>
     </div>
     <script>
-        // ...
+        const div = document.querySelector('div');
+        div.innerHTML = 'Texto Alterado'
+
+        div.insertAdjacentHTML("beforebegin", "<div class='destaque'> Antes Iicio </div>"); 
+                                //aferter begin, before end, after end
+        div.innerText = 'Texto' // apenas texto
+        
     </script>
 </body>
 
